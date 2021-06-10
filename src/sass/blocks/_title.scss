@@ -1,0 +1,14 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    color: $text-color;
+    &_fz22 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        margin-top: 5px;
+    }
+}
