@@ -252,6 +252,12 @@ template {
   width: 1140px;
   margin: 0 auto; }
 
+.divider {
+  width: 60px;
+  height: 0px;
+  border: 3px solid #daa520;
+  margin: 25px auto 0 auto; }
+
 .promo {
   min-height: 100vh;
   position: relative;
@@ -297,7 +303,14 @@ template {
   font-size: 36px;
   line-height: 60px;
   color: #f5f5f5; }
+  .title_fz20 {
+    font-size: 20px;
+    line-height: 30px; }
   .title_fz22 {
+    font-size: 22px;
+    line-height: 30px; }
+  .title_fz22a {
+    margin-left: 12px;
     font-size: 22px;
     line-height: 30px; }
   .title_fz36 {
@@ -456,5 +469,188 @@ template {
     height: 100%;
     background-color: #fff;
     opacity: .7; }
+
+.about {
+  padding-top: 120px;
+  background-color: #808080;
+  position: relative;
+  z-index: -2; }
+  .about__wrapper {
+    display: grid;
+    grid-auto-rows: minmax(245px, auto);
+    grid-template-columns: 400px 670px;
+    grid-template-rows: 245px 280px;
+    gap: 40px 70px;
+    grid-template-areas: "PHOTO DESCR" "PHOTO SKILLS"; }
+  .about .PHOTO {
+    grid-area: PHOTO; }
+  .about .DESCR {
+    grid-area: DESCR; }
+  .about__photo img {
+    padding-top: 10px;
+    width: 100%; }
+  .about__descr {
+    padding-top: 6px; }
+    .about__descr .divider {
+      margin: 0; }
+  .about__title {
+    position: relative;
+    padding: 1px 0 0 12px; }
+    .about__title:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+  .about__text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 21px; }
+  .about__skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 20px;
+    grid-template-areas: "ITEM1 ITEM2" "ITEM3 .";
+    grid-area: SKILLS; }
+    .about__skills-item1 {
+      grid-area: ITEM1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .about__skills-item2 {
+      grid-area: ITEM2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .about__skills-item3 {
+      grid-area: ITEM3;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .about__skills-circle {
+      position: relative;
+      padding: 15px 0 0 25px; }
+      .about__skills-circle:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -20%;
+        left: 0;
+        width: 44px;
+        height: 40px;
+        border-radius: 100%;
+        background: #daa520; }
+      .about__skills-circle:before {
+        top: 0; }
+    .about__skills-text {
+      margin-top: 10px;
+      margin-left: 12px;
+      font-size: 12px;
+      line-height: 18px; }
+
+.resume {
+  padding: 120px 65px 0 65px;
+  padding-bottom: 60px;
+  background-color: #808080;
+  position: relative;
+  z-index: -2; }
+  .resume__title {
+    position: relative;
+    text-align: center; }
+    .resume__title:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .resume__title:before {
+      top: -5px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .resume__subtitle {
+    text-align: center; }
+  .resume__wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    -webkit-column-gap: 135px;
+            column-gap: 135px; }
+  .resume__column-title {
+    padding-left: 35px;
+    position: relative; }
+    .resume__column-title:before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #daa520;
+      border-radius: 100%;
+      left: -7px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .resume__column ul {
+    list-style-type: none; }
+    .resume__column ul li {
+      position: relative; }
+      .resume__column ul li:after {
+        content: '';
+        width: 1.5px;
+        height: calc(100% + 16px);
+        position: absolute;
+        top: -15.5px;
+        left: 0;
+        background-color: #000000; }
+  .resume__item {
+    position: relative; }
+    .resume__item:before {
+      content: '';
+      height: 1px;
+      width: 45px;
+      position: absolute;
+      top: 64px;
+      background-color: #000000; }
+    .resume__item-head {
+      position: relative;
+      padding: 40px 0 0 105px; }
+      .resume__item-head h4 {
+        margin-bottom: 0; }
+    .resume__item-body {
+      padding-left: 43px;
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 18px; }
+    .resume__item-icon {
+      position: absolute;
+      top: 45px;
+      left: 45px; }
+      .resume__item-icon:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -20%;
+        left: 0;
+        width: 44px;
+        height: 40px;
+        border-radius: 100%;
+        background: #daa520; }
+      .resume__item-icon img {
+        position: absolute;
+        left: 23px;
+        top: 16px; }
+    .resume__item-location {
+      font-size: 16px;
+      line-height: 18px;
+      margin-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */

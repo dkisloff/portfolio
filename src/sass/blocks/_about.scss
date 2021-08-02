@@ -1,0 +1,70 @@
+.about {
+    padding-top: 120px;
+    background-color: #808080;
+    position: relative;
+    z-index: -2;
+    &__wrapper {
+        display: grid; 
+        grid-auto-rows: minmax(245px, auto); 
+        grid-template-columns: 400px 670px; 
+        grid-template-rows: 245px 280px; 
+        gap: 40px 70px; 
+        grid-template-areas: 
+          "PHOTO DESCR"
+          "PHOTO SKILLS"; 
+    }
+    .PHOTO { grid-area: PHOTO; }
+    .DESCR { grid-area: DESCR; }
+    &__photo {
+        img {
+            padding-top: 10px;
+            width: 100%;
+        }
+    }
+    &__descr {
+        padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__skills {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 20px 20px; 
+        grid-template-areas: 
+            "ITEM1 ITEM2"
+            "ITEM3 ."; 
+        grid-area: SKILLS;
+        &-item1 { grid-area: ITEM1;
+        display: flex; }
+        &-item2 { grid-area: ITEM2;
+        display: flex; }
+        &-item3 { grid-area: ITEM3;
+        display: flex; } 
+        &-circle {
+            position: relative;
+            padding: 15px 0 0 25px;
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
+        }
+        &-text {
+            margin-top: 10px;
+            margin-left: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
