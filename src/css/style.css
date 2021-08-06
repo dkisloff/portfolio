@@ -246,7 +246,9 @@ template {
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .container {
   width: 1140px;
@@ -303,6 +305,9 @@ template {
   font-size: 36px;
   line-height: 60px;
   color: #f5f5f5; }
+  .title_fz18 {
+    font-size: 18px;
+    line-height: 30px; }
   .title_fz20 {
     font-size: 20px;
     line-height: 30px; }
@@ -437,7 +442,7 @@ template {
       width: 15px;
       height: 15px;
       border-radius: 100%;
-      border: 1px solid #000000;
+      border: none;
       -webkit-transition: all 0.6s;
       transition: all 0.6s; }
     .menu__link:hover:before {
@@ -610,7 +615,7 @@ template {
         position: absolute;
         top: -15.5px;
         left: 0;
-        background-color: #000000; }
+        background-color: #2f4f4f; }
   .resume__item {
     position: relative; }
     .resume__item:before {
@@ -619,7 +624,7 @@ template {
       width: 45px;
       position: absolute;
       top: 64px;
-      background-color: #000000; }
+      background-color: #2f4f4f; }
     .resume__item-head {
       position: relative;
       padding: 40px 0 0 105px; }
@@ -652,5 +657,251 @@ template {
       font-size: 16px;
       line-height: 18px;
       margin-top: 5px; }
+
+.craft {
+  padding-top: 120px;
+  background-color: #808080;
+  position: relative;
+  z-index: -2; }
+  .craft__wrapper {
+    padding: 60px 11px 120px 11px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 13px 13px;
+    grid-auto-flow: column;
+    grid-template-areas: "craft__item-1 craft__item-2 craft__item-3 craft__item-4" "craft__item-5 craft__item-6 craft__item-7 .";
+    grid-area: craft__wrapper; }
+  .craft__item-1 {
+    grid-area: craft__item-1;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-1 img {
+      padding-bottom: 10px; }
+  .craft__item-2 {
+    grid-area: craft__item-2;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-2 img {
+      padding-bottom: 10px; }
+  .craft__item-3 {
+    grid-area: craft__item-3;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-3 img {
+      padding-bottom: 10px; }
+  .craft__item-4 {
+    grid-area: craft__item-4;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-4 img {
+      padding-bottom: 10px; }
+  .craft__item-5 {
+    grid-area: craft__item-5;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-5 img {
+      padding-bottom: 10px; }
+  .craft__item-6 {
+    grid-area: craft__item-6;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-6 img {
+      padding-bottom: 10px; }
+  .craft__item-7 {
+    grid-area: craft__item-7;
+    padding: 30px 29px 25px 30px;
+    border: 1px solid #2f4f4f;
+    border-radius: 8px; }
+    .craft__item-7 img {
+      padding-bottom: 10px; }
+  .craft__item-body {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000; }
+
+.progress {
+  padding-bottom: 120px;
+  background-color: #808080;
+  position: relative;
+  z-index: -2; }
+  .progress__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    grid-auto-columns: minmax(350px, auto);
+    gap: 30px 45px;
+    grid-auto-flow: row;
+    grid-template-areas: "progress__item-1 progress__item-2 progress__item-3" "progress__item-4 progress__item-5 progress__item-6"; }
+  .progress__item-1 {
+    grid-area: progress__item-1;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 13px; }
+    .progress__item-1:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .progress__item-1:before {
+      top: 1.5px; }
+  .progress__item-rate {
+    position: absolute;
+    right: 0;
+    top: 8px; }
+  .progress__divider_white {
+    position: absolute;
+    width: 350px;
+    height: 14px;
+    background: #2f4f4f;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__divider_gold0 {
+    position: absolute;
+    height: 14px;
+    width: 100%;
+    background: #daa520;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__divider_gold1 {
+    position: absolute;
+    height: 14px;
+    width: 85%;
+    background: #daa520;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__divider_gold2 {
+    position: absolute;
+    height: 14px;
+    width: 90%;
+    background: #daa520;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__divider_gold3 {
+    position: absolute;
+    height: 14px;
+    width: 80%;
+    background: #daa520;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__divider_gold4 {
+    position: absolute;
+    height: 14px;
+    width: 90%;
+    background: #daa520;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__divider_gold5 {
+    position: absolute;
+    height: 14px;
+    width: 95%;
+    background: #daa520;
+    border-radius: 4px;
+    margin-left: -12px;
+    margin-top: 10px; }
+  .progress__item-2 {
+    grid-area: progress__item-2;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 13px; }
+    .progress__item-2:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .progress__item-2:before {
+      top: 1.5px; }
+  .progress__item-3 {
+    grid-area: progress__item-3;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 13px; }
+    .progress__item-3:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .progress__item-3:before {
+      top: 1.5px; }
+  .progress__item-4 {
+    grid-area: progress__item-4;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 13px; }
+    .progress__item-4:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .progress__item-4:before {
+      top: 1.5px; }
+  .progress__item-5 {
+    grid-area: progress__item-5;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 13px; }
+    .progress__item-5:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .progress__item-5:before {
+      top: 1.5px; }
+  .progress__item-6 {
+    grid-area: progress__item-6;
+    position: relative;
+    padding-top: 8px;
+    padding-left: 13px; }
+    .progress__item-6:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 44px;
+      height: 40px;
+      border-radius: 100%;
+      background: #daa520; }
+    .progress__item-6:before {
+      top: 1.5px; }
 
 /*# sourceMappingURL=style.css.map */
