@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.progress__item-rate'),
+      lines = document.querySelectorAll('.progress__divider_gold0 .progress__divider_gold1 .progress__divider_gold2 .progress__divider_gold3.progress__divider_gold4 .progress__divider_gold5');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

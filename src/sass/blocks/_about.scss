@@ -1,8 +1,5 @@
 .about {
     padding-top: 120px;
-    background-color: #808080;
-    position: relative;
-    z-index: -2;
     &__wrapper {
         display: grid; 
         grid-auto-rows: minmax(245px, auto); 
